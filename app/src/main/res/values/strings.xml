@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="tile_movie_image_description">Movie Image</string>
+
+    <string name="action_sort">Sort</string>
+    <string name="action_sort_popular">Popular</string>
+    <string name="action_sort_top_rated">Top Rated</string>
+
+    <string name="movie_picture_content_description">Movie Poster</string>
+
+    <string name="detail_synopsis_label">Synopsis</string>
+    <string name="detail_user_rating_label">User Rating</string>
+    <string name="detail_release_date_label">Release Date</string>
+
+    <string name="error_message_no_internet">Internet connections is not available</string>
+    <string name="detail_error_message_no_data">Movie data not available</string>
+    <string name="detail_error_message_invalid_data">Invalid Movie data</string>
+
+</resources>

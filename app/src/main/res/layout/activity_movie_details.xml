@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_details_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agiantcookie.popularmovies.MovieDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/movie_details_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorBorder"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="28sp"
+                tools:text="Movie Title" />
+
+            <ImageView
+                android:id="@+id/movie_details_poster_iv"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
+                android:background="@color/colorBorder"
+                android:contentDescription="@string/movie_picture_content_description"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="1dp"
+                android:paddingEnd="1dp"
+                android:paddingStart="@dimen/poster_padding_left"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/synopsis_label_tv"
+                    style="@style/DetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_synopsis_label" />
+
+                <TextView
+                    android:id="@+id/synopsis_tv"
+                    style="@style/DetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Movie Synopsis is about what the movie is. Probably a few lines, maybe more and too many of these are not relevant to what will happen." />
+
+                <TextView
+                    android:id="@+id/user_rating_label_tv"
+                    style="@style/DetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_user_rating_label" />
+
+                <TextView
+                    android:id="@+id/user_rating_tv"
+                    style="@style/DetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="81.5" />
+
+                <TextView
+                    android:id="@+id/release_date_label_tv"
+                    style="@style/DetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_release_date_label" />
+
+                <TextView
+                    android:id="@+id/release_date_tv"
+                    style="@style/DetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="03/05/1984" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

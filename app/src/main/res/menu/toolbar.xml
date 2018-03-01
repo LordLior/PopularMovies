@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        app:showAsAction="always">
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/action_sort_popular"
+                android:icon="@drawable/ic_radio_button_checked_black_24dp"
+                android:title="@string/action_sort_popular"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_sort_top_rated"
+                android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:title="@string/action_sort_top_rated"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
